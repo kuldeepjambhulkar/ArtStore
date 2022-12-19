@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Local JS -->
+    <script type="module" src="./scripts/js/index.js"></script>
+    <script>
+        const launchProductModal = (index) => {
+            localStorage.setItem('clickedProductIndex', index);
+            window.location = "product.html";
+        }
+
+
+    </script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./scripts/css/style.css">
+    <title>Art Store | Home</title>
+    <link rel="shortcut icon" href="./assets/images/img-logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="container-fluid">
+        <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed pt-lg-3" style="z-index: 1;">
+                <div class="container">
+                    <div class="">
+                        <a class="navbar-brand" href="#">
+                            <i class="bi bi-easel"></i>
+                            <!-- <img src="./assets/images/img-logo.png" class="img-logo" alt="logo"> -->
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#featured-products-starts">Products</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#featured-products-starts">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Footer-starts">Contact</a> 
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#FAQ-starts">FAQ</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="https://www.instagram.com/art_by_h3/"  target="blank" class="me-4 text-reset text-decoration-none ">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset text-decoration-none ">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="" class="me-4 text-reset text-decoration-none ">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container">
+
+        <!-- Big CTA -->
+        <div class="row mt-5 vh-100 d-flex justify-content-center align-items-center text-center">
+            <div class="col">
+                <h2 style="font-size: 3rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700;">You Imagine, We <span class="brush-underline">Paint</span>!</h2>
+                <p class ="m-auto" style="width: 70%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 200;">
+                    Turn Your Vision into a Stunning Canvas Painting. <br>
+                    Find Your Perfect Painting: Browse Our Wide Selection of Original Artworks!
+                </p>
+                <button type="button" class="btn btn-dark mt-4"> <a class="link link-light text-decoration-none" href="#featured-products-starts">Explore</a></button>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="row">
+            <div class="m-auto col-lg-10 col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/car-1.png" alt="First slide">
+                        <div class="carousel-caption d-none">
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam iste!</p>
+                          </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/car-2.png" alt="First slide">
+                        <div class="carousel-caption d-none">
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam iste!</p>
+                          </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./assets/images/car-3.png" alt="First slide">
+                        <div class="carousel-caption d-none">
+                            <h5>Lorem, ipsum dolor.</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam iste!</p>
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="row mt-5" id="featured-products-starts">
+            <div class="col text-center">
+                <h2>Featured Paintings</h2>
+                <p>Elevate Your Home Decor with Our Custom Canvas Paintings!</p>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5 d-lg-flex justify-content-evenly" id="featured-products">
+            <div class="col-lg-5 col-md-12">
+                <section class="mt-4" style="background-color: #eee;">
+                    <div class="">
+                        <div class="card text-black">
+                          <img src="./assets/images/car-1.png"
+                            class="card-img-top" alt="Apple Computer" />
+                          <div class="card-body">
+                            <div>
+                            <span class="badge bg-secondary">Category</span>
+                              <h5 class="card-title mt-3">Calm Krishna</h5>
+                              <p class="text-muted mb-4">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit.</p>
+                            </div>
+                            <div>
+                              <!-- <div class="d-flex justify-content-between">
+                                <span>Whiteboard Dimensions</span><span>8" x 10"</span>
+                              </div>
+                              <div class="d-flex justify-content-between">
+                                <span>Wooden Stand</span><span>10" Mini</span>
+                              </div> -->
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center total font-weight-bold mt-4">
+                                <span>
+                                    <span><button type="button" class="btn btn-dark btn-sm" onclick="launchProductModal()"> View Product</button></span>
+                                    <span><button type="button" class="btn btn-outline-dark btn-sm"> Add to Cart</button></span>
+                                </span>
+                                <h4>₹ 1000</h4>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Category Section -->
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fluid Banner Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container-fluid pt-5 pb-5 bg-light" id="FAQ-starts">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="row mt-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How do I place an order for a custom canvas painting?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium soluta provident dicta laboriosam mollitia nihil! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, sed.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How long does it take for a custom painting to be completed?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How much does a custom canvas painting cost?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Can I request a custom painting of a specific subject or scene?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            How much does a custom canvas painting cost?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="" id="Footer-starts">
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+                <a href="https://www.instagram.com/art_by_h3/"  target="blank" class="me-4 text-reset text-decoration-none ">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-decoration-none ">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-decoration-none ">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="bi bi-gem me-3"></i>Company name
+                    </h6>
+                    <p>
+                    Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Social
+                    </h6>
+                    <p>
+                    <a href="https://www.instagram.com/art_by_h3/" target="_blank" class="text-reset text-decoration-none">Instagram</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset text-decoration-none">Facebook</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset text-decoration-none">Link Tree</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset text-decoration-none">Twitter</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Links
+                    </h6>
+                    <p>
+                    <a href="/" class="text-reset text-decoration-none">Home</a>
+                    </p>
+                    <p>
+                    <a href="#featured-products-starts" class="text-reset text-decoration-none">Products</a>
+                    </p>
+                    <p>
+                    <a href="#FAQ-starts" class="text-reset text-decoration-none">FAQ</a>
+                    </p>
+                    <p>
+                    <a href="#Footer-starts" class="text-reset text-decoration-none">Contact</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="bi bi-geo-alt me-3"></i> Building Name, Street Name, City</p>
+                    <p>
+                    <i class="bi bi-envelope me-3"></i>
+                    info@example.com
+                    </p>
+                    <p><i class="bi bi-phone me-3"></i> + 01 234 567 88</p>
+                </div>
+                <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            &copy; 2023 :
+            <a class="text-reset text-decoration-none" href="">StoreName.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+  <!-- Footer -->
+
+</body>
+</html>

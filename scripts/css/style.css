@@ -1,0 +1,40 @@
+.img-logo{
+    width: 30%;
+}
+
+.img-hero {
+    background-image: url('../../assets/images/img-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    
+}
+
+.navbar-brand > .bi {
+    font-size: 2rem;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important; 
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border: none !important;
+}
+.navbar {
+    background-color: white;
+}
+/* Height utility classes */
+.vh-50 {
+    height: 50vh !important;
+}
+
+/* .brush-underline::before {
+    content:  "";
+    background-image: url('../../assets/images/bursh.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 13%; 
+    height: 36px;
+    position: absolute;
+    top: 50%;
+} */
