@@ -8,7 +8,7 @@ let finalHTMLString = "";
 
 const ProductComponent = 
 `
-<div class="container pt-5 pb-5 mb-5" id="card">
+<div class="container mt-5 pt-5 pb-5 mb-5" id="card">
 <div class="card">
 <div class="row g-0">
     <div class="col-md-6 border-end">
@@ -63,7 +63,7 @@ const ProductComponent =
             <span>Content</span><span>${clickedProduct.content}</span>
         </div>
         <div class="d-flex justify-content-between">
-            <span>Dimensions</span><span>${clickedProduct.dimensions}</span>
+            <span>Size</span><span>${clickedProduct.size}</span>
         </div>
         </div>
         <br>
@@ -100,10 +100,11 @@ data.forEach(item => {
                     class="card-img-top" alt="${item.painting_name}" />
                 <div class="card-body">
                     <div>
-                    <span class="badge bg-secondary">${item.category}</span>
+                    <!-- <span class="badge bg-secondary">${item.category}</span> -->
                     <h5 class="card-title mt-3">${item.painting_name}</h5>
-                    <p class="text-muted mb-4">${item.description}</p>
+                    <!-- <p class="text-muted mb-4">${item.description}</p> -->
                     </div>
+                    <!-- 
                     <div>
                     <div class="d-flex justify-content-between">
                         <span>Content</span><span>${item.content}</span>
@@ -112,6 +113,7 @@ data.forEach(item => {
                         <span>Dimensions</span><span>${item.dimensions}</span>
                     </div>
                     </div>
+                    -->
                     <div class="d-flex justify-content-between align-items-center total font-weight-bold mt-4">
                         <span>
                             <span><button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalLong" onclick="launchProductModal(${item.id})"> View Product</button></span>

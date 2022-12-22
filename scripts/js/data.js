@@ -14,8 +14,11 @@ const data = [
         ],
         price: "500",
         content: ["Painting", "Stand"],
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     },
     {
         id: 2,
@@ -32,8 +35,11 @@ const data = [
         ],
         price: "500",
         content: "Painting & Stand",
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     },
     {
         id: 3,
@@ -50,8 +56,11 @@ const data = [
             "./assets/images/car-3.png"
         ],
         content: ["Painting", "Stand"],
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     },
     {
         id: 4,
@@ -68,8 +77,11 @@ const data = [
         ],
         price: "500",
         content: ["Painting", "Stand"],
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     },
     {
         id: 5,
@@ -86,8 +98,11 @@ const data = [
         ],
         price: "500",
         content: "Painting & Stand",
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     },
     {
         id: 3,
@@ -104,8 +119,11 @@ const data = [
         ],
         price: "500",
         content: ["Painting", "Stand"],
-        dimensions: "Length:61cm; Height:122cms",
-        material: "Canvas"
+        material: "Canvas",
+        color: "poster color/ acrylic",
+        itemShapee:  "small",
+        orientation: "standard",
+        size: "12.7 x 12.7 cm"
     }
 ]
 
