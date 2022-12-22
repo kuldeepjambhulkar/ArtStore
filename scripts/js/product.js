@@ -8,76 +8,105 @@ let finalHTMLString = "";
 
 const ProductComponent = 
 `
+<div id="productSection">
 <div class="container mt-5 pt-5 pb-5 mb-5" id="card">
-<div class="card">
-<div class="row g-0">
-    <div class="col-md-6 border-end">
-    <div class="d-flex flex-column justify-content-center">
-        <div class="main_image">
-        <img
-            src="${clickedProduct.imagePath}"
-            id="main_product_image"
-            width="350"
-        />
-        </div>
-        <div class="thumbnail_images">
-        <ul id="thumbnail">
-            <li>
+    <div class="card">
+    <div class="row g-0">
+        <div class="col-md-6 border-end">
+        <div class="d-flex flex-column justify-content-center">
+            <div class="main_image">
             <img
-                onclick="changeImage(this)"
-                src="${clickedProduct.relatedImages[0]}"
-                width="70"
+                src="${clickedProduct.imagePath}"
+                id="main_product_image"
+                width="350"
             />
-            </li>
-            <li>
-            <img
-                onclick="changeImage(this)"
-                src="${clickedProduct.relatedImages[1]}"
-                width="70"
-            />
-            </li>
-            <li>
-            <img
-                onclick="changeImage(this)"
-                src="${clickedProduct.relatedImages[2]}"
-                width="70"
-            />
-        </ul>
-        </div>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="p-3 right-side">
-        <div
-        class="d-flex justify-content-between align-items-center mt-4"
-        >
-        <h3>${clickedProduct.painting_name}</h3>
-        </div>
-        <div class="mt-2 pr-3 content">
-        <p>
-            ${clickedProduct.longDescription}
-        </p>
-        </div>
-        <div>
-        <div class="d-flex justify-content-between">
-            <span>Content</span><span>${clickedProduct.content}</span>
-        </div>
-        <div class="d-flex justify-content-between">
-            <span>Size</span><span>${clickedProduct.size}</span>
+            </div>
+            <div class="thumbnail_images">
+            <ul id="thumbnail">
+                <li>
+                <img
+                    onclick="changeImage(this)"
+                    src="${clickedProduct.relatedImages[0]}"
+                    width="70"
+                />
+                </li>
+                <li>
+                <img
+                    onclick="changeImage(this)"
+                    src="${clickedProduct.relatedImages[1]}"
+                    width="70"
+                />
+                </li>
+                <li>
+                <img
+                    onclick="changeImage(this)"
+                    src="${clickedProduct.relatedImages[2]}"
+                    width="70"
+                />
+            </ul>
+            </div>
         </div>
         </div>
-        <br>
+        <div class="col-md-6">
+        <div class="p-3 right-side">
+            <div
+            class="d-flex justify-content-between align-items-center mt-4"
+            >
+            <h3>${clickedProduct.painting_name}</h3>
+            </div>
+            <div class="mt-2 pr-3 content">
+            <p>
+                ${clickedProduct.longDescription}
+            </p>
+            </div>
 
-        <h3>₹${clickedProduct.price}</h3>
-        
-        <div class="buttons d-flex flex-row mt-5 gap-3">
-        <button class="btn btn-dark">Buy Now</button>
-        <button class="btn btn-outline-dark">Add to Basket</button>
+            <!-- Table here -->
+            <table class="table table-borderless font-size-12">
+                <tbody>
+                  <tr>
+                    <th scope="row">Content</th>
+                    <td>${clickedProduct.content}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size</th>
+                    <td>${clickedProduct.size}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dimensions</th>
+                    <td>${clickedProduct.dimensions}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">orientation</th>
+                    <td>${clickedProduct.orientation}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Color</th>
+                    <td>${clickedProduct.color}</td>
+                  </tr>
+                </tbody>
+            </table>
+
+            <h4>Additional Info</h4>
+            <ul class="font-size-12">
+                <li>${clickedProduct.additionalInfo[0]}</li>
+                <li>${clickedProduct.additionalInfo[1]}</li>
+                <li>${clickedProduct.additionalInfo[2]}</li>
+                <li>${clickedProduct.additionalInfo[3]}</li>
+                <li>${clickedProduct.additionalInfo[4]}</li>
+                <li>${clickedProduct.additionalInfo[5]}</li>
+                <li>${clickedProduct.additionalInfo[6]}</li>
+            </ul>
+
+            <h3>₹ ${clickedProduct.price}</h3>
+            <div class="buttons d-flex flex-row mt-5 gap-3">
+            <button class="btn btn-dark">Buy Now</button>
+            <button class="btn btn-outline-dark">Add to Basket</button>
+            </div>
+        </div>
         </div>
     </div>
     </div>
-</div>
-</div>
+    </div>
 </div>
 `
 finalHTMLString =  finalHTMLString + ProductComponent;
